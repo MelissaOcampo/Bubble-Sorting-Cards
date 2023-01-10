@@ -12,18 +12,17 @@
     />
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
+
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
-    </div>
+    <form class="d-grid gap-2">
+      <label for="input" class="fs-50 fw-bold text-center"
+        >Cantidad de cartas</label
+      >
+      <input type="number" class="form-control" id="input" />
+      <button class="btn btn-dark" type="submit">Barajar cartas</button>
+      <button class="btn btn-dark" id="botonOrdenar" type="button">
+        Ordenar cartas
+      </button>
+    </form>
   </body>
 </html>
