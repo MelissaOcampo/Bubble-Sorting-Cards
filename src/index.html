@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
+    <title>Bubble Sorting Cards by Melissa Ocampo</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
     <link rel="shortcut icon" href="./4geeks.ico" />
-  </head>
+</head>
 
-  <body>
-    <form class="d-grid gap-2">
-      <label for="input" class="fs-50 fw-bold text-center"
-        >Cantidad de cartas</label
-      >
-      <input type="number" class="form-control" id="input" />
-      <button class="btn btn-dark" type="submit">Barajar cartas</button>
-      <button class="btn btn-dark" id="botonOrdenar" type="button">
-        Ordenar cartas
-      </button>
-    </form>
-  </body>
+<body>
+    <div class="container">
+        <div class="bg-body-tertiary">
+            <div class="d-flex justify-content-center">
+                <h1 class="fs-1 fw-bolder text-uppercase text-light">Bubble Sorting Cards</h1>
+            </div>
+        </div>
+        <input class="d-grid gap-2 col-4 mx-auto my-1 border-secondary border-2" id="input" type="number" placeholder=" Ingrese aqui la cantidad..."></input>
+        <div class="d-grid gap-2 col-3 mx-auto align-middle ">
+            <!-- Boton barajar cartas -->
+            <button class="btn btn-dark border-secondary border-2" type="button" id="barajarcartas">Barajar las Cartas</button>
+            <!-- Boton ordenar cartas -->
+            <button class="btn btn-dark border-secondary border-2 mb-5" type="button" id="ordenarcartas">Ordenar las Cartas</button>
+        </div>
+        <div class="container-fluid d-flex justify-content-evenly flex-wrap" id="card"></div>
+    </div>
+</body>
+
 </html>
